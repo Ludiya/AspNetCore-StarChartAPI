@@ -17,5 +17,10 @@ namespace StarChart.Controllers
         {
             this._context = _context;
         }
+        [HttpGet("{id:int}")]
+        public IActionResult GetById()
+        {
+            return NotFound();
+        }
     }
 }
